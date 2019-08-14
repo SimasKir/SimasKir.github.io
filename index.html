@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simas Kiriliauskas</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="/icons/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/block.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+
+</head>
+<body onresize="navChange()">
+    <div class="container">
+
+        <div class="navigation">
+            <div class="circle" onmouseover="navTextHide1()" onmouseout="navTextHideFull()">
+                <a href="#landing"><div class="text" id="navtext1"></div></a>
+            </div>
+            <div class="circle" onmouseover="navTextHide2()" onmouseout="navTextHideFull()">
+                <a href="#portfolio"><div class="text" id="navtext2"></div></a>
+            </div>
+            <div class="circle" onmouseover="navTextHide3()" onmouseout="navTextHideFull()">
+                <a href="#about"><div class="text" id="navtext3"></div></a>
+            </div>
+            <div class="circle" onmouseover="navTextHide4()" onmouseout="navTextHideFull()">
+                <a href="#contact"><div class="text" id="navtext4"></div></a>
+            </div>
+        </div>
+
+        <div id="landing">
+            <div class="img-wrap">
+                <img src="images/portfolio.jpg" alt="">
+            </div>
+            <div class="main-text-box">
+                <h1>Simas
+                    <a href="#portfolio">
+                        <div class="button" id="landing-btn">
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </a>
+                    <a href="#about">
+                        <div class="button" id="down-btn">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </a>
+                </h1>
+                <h2>Kiriliauskas</h2>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div id="portfolio-main-text">
+                <h3>Portfolio</h3>
+            </div>
+            <div class="shaped">
+                <div class="portfolio-work-1" onmouseover="movePicture1()" onmouseout='returnPicture1()'>
+                    <img src="images/testwork1.jpg" alt="" id="portfolio1">
+                    <div id="dark-theme1"></div>
+                    <a href="#" id='show-btn1' onmouseover="paintButton1()" onmouseout="repaintButton1()">Work #1</a>
+                </div>
+                <div class="portfolio-work-2" onmouseover="movePicture2()" onmouseout='returnPicture2()'>
+                    <img src="images/testwork1.jpg" alt="" id="portfolio2">
+                    <div id="dark-theme2"></div>
+                    <a href="#" id='show-btn2' onmouseover="paintButton2()" onmouseout="repaintButton2()">Work #2</a>
+                </div>
+                <div class="portfolio-work-3" onmouseover="movePicture3()" onmouseout='returnPicture3()'>
+                    <img src="images/testwork1.jpg" alt="" id="portfolio3">
+                    <div id="dark-theme3"></div>
+                    <a href="#" id='show-btn3' onmouseover="paintButton3()" onmouseout="repaintButton3()">Work #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="style-shape-2"></div>
+
+            <div class="about-picture-1">
+                <div class="image-wrap">
+                    <img src="images/myphoto.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="text-container">
+                <a href="#contact"><div class="button" id="left-btn"><i class="fas fa-caret-left"></i></div></a>
+                <h3>Little</h3>
+                <h4>about me</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vitae beatae vel optio reprehenderit recusandae, id error doloremque consequuntur velit nostrum laboriosam minus nemo odit adipisci eaque molestiae deleniti a.</p>
+            </div>
+
+            <div class="skills-icons">
+                <div class="row">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="row">
+                    <i class="fab fa-bootstrap"></i>
+                    <i class="fab fa-wordpress-simple"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="style-shape-1"></div>
+
+            <h3 id="about-main-text">How to reach me?</h3>
+
+            <p id="about-main-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vitae beatae vel optio reprehenderit recusandae, id error doloremque consequuntur velit nostrum laboriosam minus nemo odit adipisci eaque molestiae deleniti a.</p>
+
+            <div class="social-container">
+                <div class="social-align-container">
+                    <a href="tel:+37067813287" onmouseover="fillText('+37067813287')" class="icon"><i class="fas fa-phone-alt"></i><span>+37067813287</span><div class="social-dec"></div></a>
+                    <a href="mailto:simaskiriliauskas@gmail.com" onmouseover="fillText('simaskiriliauskas@gmail.com')" class="icon"><i class="far fa-envelope"></i><span>simaskiriliauskas@gmail.com</span><div class="social-dec"></div></a>
+                    <a href="https://www.linkedin.com/in/simas-kiriliauskas/" onmouseover="fillText('https://www.linkedin.com/in/simas-kiriliauskas/')" class="icon"><i class="fab fa-linkedin"></i><span>www.linkedin.com/in/simas-kiriliauskas/</span><div class="social-dec"></div></a>
+                </div>
+            </div>
+            <span id='social-info' onmouseout="nofillText()"></span><div class="social-dec"></div>
+
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <p>&#9400; 2019	Simas Kiriliauskas </p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/logic.js"></script>
+
+    </body>
+    </html>

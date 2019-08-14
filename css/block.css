@@ -1,0 +1,105 @@
+html {
+    font-family: Futura PT;
+    background-color: #2C2C2C;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+}
+
+#landing {
+    grid-area: landing;
+    height:100vh;
+}
+#portfolio {
+    grid-area: portfolio;
+    height:100vh;
+}
+#about {
+    grid-area: about;
+    background-color: white;
+    height:100vh;
+}
+#contact {
+    grid-area: contact;
+    height:100vh;
+}
+footer {
+    grid-area: footer;
+    display: none;
+    height:100vh;
+}
+
+.container {
+
+    height: auto;
+    display: grid;
+    grid-template-columns: 100vw 100vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "landing portfolio"
+    "contact about";
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    #landing {
+        grid-area: landing;
+        height:auto;
+        width: 100%;
+    }
+
+    #portfolio {
+        grid-area: portfolio;
+        height:auto;
+        width: 100%;
+    }
+
+    #about {
+        grid-area: about;
+        height:auto;
+        background: #2C2C2C;
+        width: 100%;
+    }
+
+    #contact {
+        grid-area: contact;
+        height:auto;
+        width: 100%;
+    }
+
+    footer {
+        grid-area: footer;
+        display: block;
+        height:auto;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 0;
+        color: #707070;
+    }
+
+
+    .container {
+        grid-template-areas:
+        "landing"
+        "portfolio"
+        "about"
+        "contact"
+        "footer";
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+}

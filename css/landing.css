@@ -1,0 +1,194 @@
+.img-wrap {
+    height: 100vh;
+    max-width: 100vw;
+    object-fit: contain;
+    display: flex;
+    align-items: flex-end;
+}
+img {
+    width: auto;
+    height: 100vh;
+    float: bottom;
+}
+
+.button {
+    position: absolute;
+    top: 20%;
+    left: 26.2%;
+    height: 5.5vw;
+    width: 5.5vw;
+    background-color: #F5D6BA;
+    clip-path: circle(40%);
+    z-index: 1;
+}
+
+#down-btn {
+    position: absolute;
+    top: 20%;
+    left: 74.7%;
+    height: 5.5vw;
+    width: 5.5vw;
+}
+
+.main-text-box {
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   margin: 0 50vw;
+   top: 0;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+}
+h1 {
+
+   position: static;
+   text-align: center;
+   transform: rotate(0deg);
+   font-size: 40vw;
+   color: #707070;
+   z-index: 1;
+}
+
+h2 {
+   position: absolute;
+   text-align: center;
+   transform: rotate(0deg);
+   width: 100%;
+   top:79vh;
+
+
+   font-family: Courier New;
+   font-size: 5vw;
+   color: #707070;
+}
+
+#landing .fas {
+    position: absolute;
+    top: 23%;
+    left: -2%;
+    height: 6vw;
+    width: 6vw;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 3vw;
+}
+
+#down-btn .fas {
+    left: -5%;
+}
+
+#landing i:hover{
+    color: #F5D6BA;
+    background-color: #2C2C2C;
+
+    transition: 1s ease-in-out;
+}
+
+#landing a:hover > .button {
+    transition: 0.5s ease-in-out;
+    background-color: #2C2C2C;
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .img-wrap {
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        float: bottom;
+    }
+
+    .main-text-box {
+        transform: rotate(0deg);
+       position: absolute;
+       height: 50vw;
+       width: 100vw;
+       top: 70vw;
+       left: 0;
+       margin: 0;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+   }
+   h1 {
+       position: static;
+       text-align: center;
+       transform: rotate(0deg);
+       font-size: 40vw;
+       color: #F5D6BA;
+       z-index: 1;
+   }
+
+   h2 {
+       position: static;
+       text-align: center;
+       margin-bottom: 50px;
+       transform: rotate(0deg);
+       width: 100%;
+       bottom: 0;
+
+
+       font-family: Courier New;
+       font-size: 5vw;
+       color: #F5D6BA;
+   }
+
+   .button {
+       width: 7vw;
+       height: 7vw;
+   }
+
+   #landing-btn {
+       display: none;
+       position: absolute;
+       top: 7vw;
+       left: 25.5vw;
+   }
+
+   #landing .fas {
+       transform: rotate(90deg);
+       position: absolute;
+       top: 0;
+       left: -1.1vw;
+       height: 7vw;
+       width: 7vw;
+       z-index: 1;
+       color: white;
+       font-size: 5vw;
+   }
+
+   #down-btn {
+       display: none;
+   }
+
+   #landing i:hover{
+       color: #F5D6BA;
+       background-color: transparent;
+
+       transition: 0.3s ease-in-out;
+   }
+
+   #landing a:hover > .button {
+       transition: 0.5s ease-in-out;
+       background-color: #2C2C2C;
+   }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+}

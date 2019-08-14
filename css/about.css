@@ -1,0 +1,258 @@
+.about-picture-1 {
+    position: absolute;
+    height:100vh;
+    width:100vw;
+
+    background: #2C2C2C;
+    clip-path: polygon(100% 0%, 20% 0%,65% 100%, 100% 100%, 100% 65%);
+    z-index: 1;
+}
+
+.about-picture-1 img {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: auto;
+
+}
+
+.image-wrap {
+
+    width: 50vw;
+    height: 100vh;
+}
+
+.style-shape-2 {
+    position: absolute;
+    height:100vh;
+    width:100vw;
+
+    background: #2C2C2C;
+    clip-path: polygon(0% 0%, 10% 0%, 0% 11%);
+}
+
+.text-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+p {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top:70%;
+    left: 10%;
+    word-wrap: break-word;
+
+    font-size: 1.2em;
+}
+
+#about h3 {
+    position: absolute;
+    top:48%;
+    left: 20%;
+    font-size: 100px;
+}
+h4 {
+    position: absolute;
+    top:60%;
+    left: 10%;
+    font-size: 50px;
+}
+
+#left-btn {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    height: 5.5vw;
+    width: 5.5vw;
+
+    background-color: #2C2C2C;
+    clip-path: circle(40%);
+    z-index: 2;
+
+}
+
+#about i {
+    background-color: #2C2C2C;
+    color: #F5D6BA;
+
+    /* transition: 0.6s ease-in; */
+    position: absolute;
+    top: 22%;
+    left: -9%;
+    height: 6vw;
+    width: 6vw;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 3vw;
+}
+
+
+#left-btn:hover {
+    background-color: white;
+    transition: 0.6s ease-in-out;
+}
+
+#left-btn:hover > i {
+    color: black;
+    background-color: white;
+
+    transition: 0.6s ease-in-out;
+}
+
+#about .skills-icons {
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.row {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+}
+
+.row:nth-child(2) {
+    margin-top: 0;
+}
+
+#about .skills-icons i {
+    background-color: #2C2C2C;
+    color: #F5D6BA;
+    /* transition: 0.6s ease-in; */
+    position: static;
+    height: 5vw;
+    width: 6vw;
+    z-index: 1;
+    color: white;
+    font-size: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+    .about-picture-1 {
+        display: none;
+    }
+
+    .image-wrap {
+        display: none;
+    }
+
+    .about-picture-1 img {
+        display: none;
+    }
+
+    .style-shape-2 {
+        display: none;
+    }
+
+    .text-container {
+        margin: 10% 0;
+        position:static;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+
+    p {
+        position: static;
+        top: 0;
+        left: 0;
+        margin: 5% 15%;
+        padding: 0 0;
+        width: 70%;
+        height: auto;
+        word-wrap: break-word;
+        color: #F5D6BA;
+
+        font-size: 1.2em;
+    }
+
+    #about h3 {
+
+        position: static;
+        top: 0;
+        margin-left: 30%;
+
+        font-size: 18vw;
+        color: #F5D6BA;
+    }
+    h4 {
+        position: static;
+        margin-top:0;
+        padding-left: 43%;
+        font-size: 9vw;
+        color: #F5D6BA;
+    }
+
+    #left-btn {
+        display: none;
+    }
+
+
+
+    #about-section i {
+
+        position: absolute;
+        top: -17%;
+        left: 27%;
+        background-color: #2C2C2C;
+        color: #F5D6BA;
+
+        /* transition: 0.6s ease-in; */
+    }
+
+
+    #about-section .next-contact-btn:hover, #about-section .next-contact-btn:hover > i {
+        transition: 0.6s ease-in;
+        background-color:white;
+        color: #2C2C2C;
+    }
+
+    #about .skills-icons {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: auto;
+        margin-top: 0vh;
+        margin-bottom: 5vh;
+        z-index: 1;
+    }
+
+    .row {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: center;
+        width: 50vw;
+        height: 7vw;
+    }
+
+    .row:nth-child(2) {
+        justify-content: flex-start;
+    }
+
+    #about .skills-icons i {
+        background-color: #2C2C2C;
+        color: #F5D6BA;
+        /* transition: 0.6s ease-in; */
+        position: static;
+        height: 5vw;
+        width: 6vw;
+        z-index: 1;
+        color: white;
+        font-size: 7vw;
+
+        margin: 0 5px;
+    }
+}
